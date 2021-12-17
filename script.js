@@ -14,11 +14,11 @@ const highlightMenu = () => {
   // console.log(scrollPos);
 
   // adds 'highlight' class to my menu items
-  if (window.innerWidth > 960 && scrollPos < 600) {
+  if (window.innerWidth > 960 && scrollPos < 500) {
     homeMenu.classList.add('highlight');
     aboutMenu.classList.remove('highlight');
     return;
-  } else if (window.innerWidth > 960 && scrollPos < 1400) {
+  } else if (window.innerWidth > 960 && scrollPos < 1200) {
     aboutMenu.classList.add('highlight');
     homeMenu.classList.remove('highlight');
     servicesMenu.classList.remove('highlight');
@@ -34,13 +34,17 @@ const highlightMenu = () => {
   }
 };
 
+// window.addEventListener("scroll", (event) => {
+//   let scroll = this.scrollY;
+//   console.log(scroll)
+// });
+
 window.addEventListener('scroll', highlightMenu);
 window.addEventListener('click', highlightMenu);
 
 const mobileMenu = () => {
   menu.classList.toggle('is-active');
   menuLinks.classList.toggle('active');
-
 };
 
 window.onclick = function (event) {

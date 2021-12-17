@@ -53,9 +53,13 @@ a:hover {color: inherit;}
     float: left;
     padding: 20px;
 }
+.personal-child1{
+  float: left;
+  padding: 20px;
+}
   
 .navbar {
-    background: #131313;
+    background-color: #EE4E34;
     height: 80px;
     display: flex;
     justify-content: center;
@@ -68,8 +72,8 @@ a:hover {color: inherit;}
   
   .navbar__container {
     display: flex;
+    height: 40px;
     justify-content: space-between;
-    height: 80px;
     z-index: 1;
     width: 100%;
     max-width: 1300px;
@@ -77,20 +81,32 @@ a:hover {color: inherit;}
     padding: 0 50px;
   }
   
-#navbar__logo {
-    background-color: #ff8177;
-    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
-    background-size: 100%;
+  #navbar__logo {
+    /* background-color: #ff8177;
+    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%); */
+    /* background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
+    -moz-text-fill-color: transparent; */
+    color: black;
     display: flex;
     align-items: center;
     cursor: pointer;
     text-decoration: none;
     font-size: 2rem;
+}
+
+#navbar__logo1 {
+  color: black;
+  background-color: #FCEDDA;
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1.5rem;
 }
   
 .navbar__menu {
@@ -104,7 +120,7 @@ a:hover {color: inherit;}
 }
   
 .navbar__links {
-    color: #fff;
+    color: black;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -145,7 +161,7 @@ div.scroll
    */
 
 .highlight {
-  border-bottom: 4px solid rgb(132, 0, 255);
+  border-bottom: 4px solid #FCEDDA;
 }
 
 .col1, .col2, .col3 {
@@ -161,8 +177,9 @@ div.scroll
 }
 
 #resumeDownload {
-  font-size: 50px;
+  font-size: 30px;
   text-align: center;
+
 }
 @media screen and (max-width: 960px) {
     .navbar__container {
