@@ -11,14 +11,13 @@ const highlightMenu = () => {
   const aboutMenu = document.querySelector('#resume-page');
   const servicesMenu = document.querySelector('#projects-page');
   let scrollPos = window.scrollY;
-  // console.log(scrollPos);
 
   // adds 'highlight' class to my menu items
-  if (window.innerWidth > 960 && scrollPos < 600) {
+  if (window.innerWidth > 960 && scrollPos < 500) {
     homeMenu.classList.add('highlight');
     aboutMenu.classList.remove('highlight');
     return;
-  } else if (window.innerWidth > 960 && scrollPos < 1400) {
+  } else if (window.innerWidth > 960 && scrollPos < 1200) {
     aboutMenu.classList.add('highlight');
     homeMenu.classList.remove('highlight');
     servicesMenu.classList.remove('highlight');
@@ -40,20 +39,16 @@ window.addEventListener('click', highlightMenu);
 const mobileMenu = () => {
   menu.classList.toggle('is-active');
   menuLinks.classList.toggle('active');
-
 };
 
-window.onclick = function (event) {
+document.getElementById("mobile-menu").addEventListener("click", helper);
+
+function helper() {
   if (counterMenu) {
-    mobileMenu()
-    counterMenu = false;
+    mobileMenu();
+    console.log(counterMenu);
   }
-  else {
-    menu.classList.toggle('is-active');
-    menuLinks.classList.remove('active');
-    counterMenu = true;
-  }
-};
+}
 
 AOS.init({
   easing: 'ease-in-quad',
