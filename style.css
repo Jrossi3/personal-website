@@ -60,7 +60,7 @@ a:hover {color: inherit;}
   
 .navbar {
     background-color: #EE4E34;
-    height: 80px;
+    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -170,8 +170,7 @@ div.scroll
   padding: 20px;
 }
 
-.colNext1, .colNext2 {
-  width: 50%;
+.colWhole{
   float: left;
   padding: 20px;
 }
@@ -214,12 +213,12 @@ div.scroll
     }
   
     .navbar__menu.active {
-      background: #131313;
+      background: #EE4E34;
       top: 100%;
       opacity: 1;
       transition: all 0.5s ease;
       /* z-index: -1; */
-      height: 40vh;
+      height: 55vh;
       font-size: 1.6rem;
     }
   
@@ -227,6 +226,10 @@ div.scroll
       padding-left: 25px;
     }
   
+    /* #navbar__logo1 {
+      padding-left: 25px;
+    } */
+
     .navbar__toggle .bar {
       width: 25px;
       height: 3px;

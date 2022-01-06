@@ -20,6 +20,7 @@
 
     <script src="https://kit.fontawesome.com/24d374bfa6.js" crossorigin="anonymous"></script>
     <!-- Add icon library -->
+    <script src = "animation.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
   </head>
@@ -33,13 +34,14 @@
             <span class="bar"></span>
           </div>
             <div class="navbar__menu">
-                <a href="#home" class="navbar__links" id="home-page">Home</a>
-                <a href="#resume" class="navbar__links" id="resume-page">Resume</a>
-                <a href="#projects" class="navbar__links" id="projects-page">Projects</a>
+                <a href="home.html" class="navbar__links" id = "home-page">Home</a>
+                <a onclick = "mobileMenu()" href="#resume" class="navbar__links" id = "resume-page">Resume</a>
+                <a onclick = "mobileMenu()" href="#projects" class="navbar__links" id = "projects-page">Projects</a>
+                <a href="contact.html" class="navbar__links">Contact</a>
             </div>
-            <a href="contact.html" id="navbar__logo1">Contact</a>
         </div>
       </nav>
+      <div class = "content show-on-scroll">
           <div style = "background-color: #FCEDDA;" class = "personal-container" id = "home" data-aos = "slide-iup">
             <div class = "personal-child" id = "bio">
               <p>I am a junior Computer Science major at Stevens Institute of Technology
@@ -56,10 +58,12 @@
               <img class = "resize" src = "SeniorPhoto.png">
             </div>
           </div>
+        </div>
           <div style = "background-color: #EE4E34;" class = "personal-container" id = "resume">
             <div class = "personal-child1" id = "bio">
-            <p id = "resumeDownload"><a style = "text-decoration: none; color: black" href = "Jason_Rossi Resume.pdf" download>Download CV</a></p>
-              <div class="col1" id = "education">
+            <br>
+              <p id = "resumeDownload"><a style = "text-decoration: none; color: black" href = "Jason_Rossi Resume.pdf" download>Download CV</a></p>
+              <div class="col1">
                 <h1>Education</h1>
                 <p>Stevens Institute of Technology, Computer Science Major, September 2019 - May 2023</p>
               </div>
@@ -90,17 +94,43 @@
             </div>
           </div>
           <div style = "background-color: #EE4E34;" class = "personal-container" id = "projects">
-            <div class="colNext1" id = "education">
+            <div class="colWhole" id = "education">
               <h1>Projects!</h1>
-              <p><a href="https://jrossi3.github.io/Spring-Break-Calculator/" target="_blank">Spring Break Calculator</a></p>
-              <p><a href="https://jrossi3.github.io/quiz-app/" target="_blank">Basic Quiz App</a></p>
-              <p><a href="https://jrossi3.github.io/interactive-timer/" target="_blank">Interactive Timer</a></p>
-              <p style = "font-size: 100px;">Insert photos/videos of each project working</p>
+              <p>
+                <a style = "text-decoration: none; text-align: center; font-size: 50px; color: black;" 
+                href="https://jrossi3.github.io/quiz-app/" target="_blank">
+                  Interactive Timer - Not Final
+                </a>
+              </p>
+              <p>
+                <a style = "text-decoration: none; text-align: center; font-size: 50px; color: black;" 
+                href="https://jrossi3.github.io/interactive-timer/" target="_blank">
+                  Interactive Timer - Not Final
+                </a>
+              </p>
+              <p>
+                <a style = "text-decoration: none; text-align: center; font-size: 50px; color: black;" 
+                href="https://jrossi3.github.io/Spring-Break-Calculator/" target="_blank">
+                  Spring Break Calculator - Not Final
+                </a>
+                <div style="text-align:center"> 
+                  <button onclick="playPause()">Play/Pause</button> 
+                  <button onclick="makeBig()">Big</button>
+                  <button onclick="makeSmall()">Small</button>
+                  <button onclick="makeNormal()">Normal</button>
+                  <br><br>
+                  <video id = "video100" width="100%" height="80%" autoplay>
+                    <source src="SpringBreakCalculator.mp4" type="video/mp4">
+                  </video>
+                </div> 
+                <script src = "videosOfProjects.js"></script> 
+              </p>
             </div>
-            <div class="colNext2" id = "coursework">
+            
+          </div>
+          <div class="colWhole" id = "coursework">
             <h1>My Story</h1>
               <p></p>
-            </div>
           </div>
       <script src = "script.js"></script>
       <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
