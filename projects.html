@@ -1,0 +1,80 @@
+@@ -0,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset = "UTF-8"/>
+    <meta name = "viewport"
+    content="width=device-width, initial-scale=1.0"/>
+    <title>
+    </title>
+    <link rel="stylesheet" href="style.css"/>
+    <!-- Latest compiled and minified CSS -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="https://kit.fontawesome.com/24d374bfa6.js" crossorigin="anonymous"></script>
+    <!-- Add icon library -->
+    <script src = "animation.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar__container">
+          <a href="index.html" id="navbar__logo">Jason</a>
+          <div class="navbar__toggle" id="mobile-menu">
+            <span class="bar"></span> 
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+            <div class="navbar__menu">
+                <a href="index.html" class="navbar__links" id = "home-page">Home</a>
+                <!-- <a href="contact.html" class="navbar__links">Contact</a> -->
+            </div>
+        </div>
+      </nav>
+    <div style = "background-color: #FCEDDA;" class = "personal-container" id = "projects">
+        <div class="colWhole" id = "education">
+          <h1>Projects!</h1>
+          <p>
+            <a style = "text-decoration: none; text-align: center; font-size: 50px; color: black;" 
+            href="https://jrossi3.github.io/quiz-app/" target="_blank">
+              Quiz App - Not Final
+            </a>
+          </p>
+          <p>
+            <a style = "text-decoration: none; text-align: center; font-size: 50px; color: black;" 
+            href="https://jrossi3.github.io/interactive-timer/" target="_blank">
+              Interactive Timer - Not Final
+            </a>
+          </p>
+          <p>
+            <a style = "text-decoration: none; text-align: center; font-size: 50px; color: black;" 
+            href="https://jrossi3.github.io/Spring-Break-Calculator/" target="_blank">
+              Spring Break Calculator - Not Final
+            </a>
+            <div style="text-align:center"> 
+              <button onclick="playPause()">Play/Pause</button> 
+              <!-- <button onclick="makeBig()">Big</button>
+              <button onclick="makeSmall()">Small</button>
+              <button onclick="makeNormal()">Normal</button> -->
+              <br><br>
+              <video id = "video100" width="100%" height="80%" autoplay>
+                <source src="SpringBreakCalculator.mp4" type="video/mp4">
+              </video>
+            </div> 
+            <script src = "videosOfProjects.js"></script> 
+          </p>
+        </div>
+    <script src = "script.js"></script>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+</body>
+</html>
