@@ -44,31 +44,35 @@ a:hover {color: inherit;}
 }
 
 .personal-container{
-    padding: 20px;
-    display: flex;
+  padding: 20px;
+  display: flex;
+  /* position: absolute; */
+  /* mix-blend-mode: soft-light; */
 }
 
 .personal-child{
-    width: 50%;
-    float: left;
-    padding: 20px;
-}
-.personal-child1{
+  width: 50%;
   float: left;
   padding: 20px;
 }
-  
+.personal-child1{
+float: left;
+padding: 20px;
+}
+
 .navbar {
-    background-color: #EE4E34;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.2rem;
-    position: sticky;
-    top: 0;
-    z-index: 999;
-  }
+  background-color: #EE4E34;
+  background-color: transparent;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  position: sticky;
+  /* position: sticky; */
+  top: 0;
+  z-index: 999;
+}
   
   .navbar__container {
     display: flex;
