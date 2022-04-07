@@ -6,10 +6,10 @@ body {
     animation-duration: 2s;
 }
 
-@-webkit-keyframes tophelp {
+/* @-webkit-keyframes tophelp {
     from {top: -75px; opacity: 0}
     to {top: 0px; opacity: 1}
-}
+} */
 
 @keyframes tophelp {
     from {top: -75px; opacity: 0}
@@ -67,38 +67,37 @@ padding: 20px;
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
-  position: sticky;
   /* position: sticky; */
   top: 0;
   z-index: 999;
 }
   
-  .navbar__container {
-    display: flex;
-    height: 40px;
-    justify-content: space-between;
-    z-index: 1;
-    width: 100%;
-    max-width: 1300px;
-    margin: 0 auto;
-    padding: 0 50px;
-  }
-  
-  #navbar__logo {
-    /* background-color: #ff8177;
-    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%); */
-    /* background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent; */
-    color: black;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 2rem;
+.navbar__container {
+  display: flex;
+  height: 40px;
+  justify-content: space-between;
+  z-index: 1;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+#navbar__logo {
+  /* background-color: #ff8177;
+  background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%); */
+  /* background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent; */
+  color: black;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
 }
 
 #navbar__logo1 {
@@ -183,6 +182,7 @@ div.scroll
   text-align: center;
 
 }
+
 @media screen and (max-width: 960px) {
     .navbar__container {
       display: flex;
@@ -217,11 +217,11 @@ div.scroll
   
     .navbar__menu.active {
       background: #EE4E34;
-      top: 100%;
+      top: 0%;
       opacity: 1;
       transition: all 0.5s ease;
       /* z-index: -1; */
-      height: 55vh;
+      /* height: 55vh; */
       font-size: 1.6rem;
     }
   
@@ -254,7 +254,7 @@ div.scroll
   
     #mobile-menu {
       position: absolute;
-      top: 20%;
+      top: 1%;
       right: 5%;
       transform: translate(5%, 20%);
     }
