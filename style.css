@@ -216,7 +216,7 @@ div.scroll
     }
   
     .navbar__menu.active {
-      background: #EE4E34;
+      background: #a7f390;
       top: 0%;
       opacity: 1;
       transition: all 0.5s ease;
