@@ -149,7 +149,7 @@ padding: 20px;
 div.scroll
 {
   Width:5px;
-  Height:10 px;
+  Height: 10px;
   Overflow-y:scroll;
 }
 
@@ -172,6 +172,12 @@ div.scroll
   padding: 20px;
 }
 
+.colNext1, .colNext2{
+  width: 50%;
+  float: left;
+  padding: 20px;
+}
+
 .colWhole{
   float: left;
   padding: 20px;
@@ -180,7 +186,6 @@ div.scroll
 #resumeDownload {
   font-size: 30px;
   text-align: center;
-
 }
 
 @media screen and (max-width: 960px) {
