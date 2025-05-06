@@ -1,101 +1,64 @@
-<!DOCTYPE html><html>
-  <head>
-    <meta charset = "UTF-8"/>
-    <meta name = "viewport"
-    content="width=device-width, initial-scale=1.0"/>
-    <title>
-    </title>
-    <link rel="stylesheet" href="style.css"/>
-    <!-- Latest compiled and minified CSS -->
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
-  </head>
-    <body>
-      <nav class="navbar">
-        <div class="navbar__container">
-          <a href="index.html" id="navbar__logo">Jason</a>
-          <div class="navbar__toggle" id="mobile-menu">
-            <span class="bar"></span> 
-            <span class="bar"></span>
-            <span class="bar"></span>
-          </div>
-            <div class="navbar__menu">
-                <a href="index.html" class="navbar__links" id = "home-page">Home</a>
-                <!-- <a onclick = "mobileMenu()" href="#resume" class="navbar__links" id = "resume-page">Resume</a> -->
-                <a href="projects.html" class="navbar__links" id = "projects-page">Projects</a>
-                <!-- <a href="contact.html" class="navbar__links">Contact</a> -->
-            </div>
-        </div>
-      </nav>
-      <div class = "content show-on-scroll">
-          <div style = "background-color: #FCEDDA;" class = "personal-container" id = "home" data-aos = "slide-iup">
-            <div class = "personal-child" id = "bio">
-              <p>I am a Graduate Computer Science student at Stevens Institute of Technology
-                in Hoboken, New Jersey. 
-              </p>
-              <p> I have recently gained a strong interest for Web Development
-                and I am actively working towards improving my skills. When I am not developing, 
-                I spend my time playing chess, soccer, golf, and keeping up to date with the stock market.
-              </p>
-            </div>
-            <div class = "personal-child">
-              <img class = "resize" src = "SeniorPhoto.png">
-            </div>
-          </div>
-        </div>
-          <div class = "personal-container" id = "resume" style = "background-color: #7395AE;">
-            <div class = "personal-child1" id = "bio">
-            <br>
-              <p id = "resumeDownload"><a style = "text-decoration: none; color: black" href = "Resume.pdf" download>Download CV</a></p>
-              <div class="col1">
-                <h1>Education</h1>
-                <p>Stevens Institute of Technology</p>
-                <p>Bachelor of Science in Computer Science: September 2019 - May 2023</p>
-                <p>Masters of Science in Computer Science: September 2022 - May 2023</p>
-              </div>
-              <div class="col2" id = "coursework">
-              <h1>Coursework:</h1>
-                <p>Discrete Structures, Data Structures, 
-                Automata and Computation, Computer Organization and Programming, 
-                Algorithms, Systems Programming, Programming Languages, Linear Algebra, 
-                Concurrent Programming, Database Management Systems</p>
-              </div>
-              <div class="col3" id = "honorsClubsHobbies">
-                <h1>Honors, Clubs, Hobbies</h1>
-                <p>Honors: Edwin A. Stevens Scholarship, Dean's List, GPA: 3.9</p>
-                <p>Stevens Clubs: Developers Student Club, Chess Club, Poker Club, Club Soccer</p>
-                <p>Hobbies: Soccer, Chess, Poker, Trading Stocks</p>
-              </div>
-              <div class="colNext1" id = "webExperience">
-                <h1>Professional Experience</h1>
-                <p>Security Analyst Intern, Jefferies Group: January 2021 - May 2021</p>
-                <p>Automation Developer for G3 Technologies: January 2022 - May 2022</p>
-                <p>Teaching Assistant for Data Structures: August 2021 - December 2021</p>
-                <p>Teaching Assistant for Linear Algebra: August 2021 - May 2022</p>
-              </div>
-              <div class="colNext2" id = "workExperience">
-                <h1>Other Work</h1>
-                <p>Swim Instructor and Lifeguard at Lifetime Fitness</p>
-                <p>Math Tutor: Estelle Finkel Center for Learning, Self-Run Business</p>
-              </div>
-            </div>
-          </div>
-          
-            
-          </div>
-      <script src = "script.js"></script>
-      <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
-            <!-- jQuery library -->
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!DOCTYPE html>
+<html lang="en">
 
-      <!-- Popper JS -->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jason Rossi | Software Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
 
-      <!-- Latest compiled JavaScript -->
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<body>
+  <header class="hero">
+    <h1>Jason Rossi</h1>
+    <p>Software Engineer | Web Developer</p>
+    <a class="button" href="Resume.pdf" download>Download Resume</a>
+  </header>
 
-      <script src="https://kit.fontawesome.com/24d374bfa6.js" crossorigin="anonymous"></script>
-      <!-- Add icon library -->
-    </body>
+  <nav class="main-nav">
+    <a href="#about">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="https://github.com/jrossi3" target="_blank">GitHub</a>
+  </nav>
+
+  <main>
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>I’m a Computer Science graduate from Stevens Institute of Technology with a deep interest in full-stack development. I've worked across diverse roles—from security analytics to teaching—and am passionate about delivering impactful solutions.</p>
+        <p>In my free time, I enjoy chess, soccer, and tracking financial markets.</p>
+      </div>
+    </section>
+
+    <section id="experience" class="section alt">
+      <div class="container">
+        <h2>Experience</h2>
+        <ul>
+          <li><strong>TECDP Lead Analyst</strong> – The Cigna Group (Jul 2023 – Present)</li>
+          <li><strong>Security Analyst Intern</strong> – Jefferies Group (Jan 2021 – May 2021)</li>
+          <li><strong>Automation Developer</strong> – G3 Technologies (Jan 2022 – May 2022)</li>
+          <li><strong>Teaching Assistant</strong> – Data Structures & Linear Algebra (2021–2022)</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="education" class="section">
+      <div class="container">
+        <h2>Education</h2>
+        <p><strong>Stevens Institute of Technology</strong><br />
+          B.S. & M.S. in Computer Science<br />
+          GPA: 3.9 | Dean’s List | Edwin A. Stevens Scholar</p>
+        <p><strong>Relevant Coursework:</strong> Algorithms, Systems Programming, Databases, Concurrent Programming, AI</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2021 Jason Rossi | <a href="mailto:Jasrossi14@gmail.com">Jasrossi14@gmail.com</a></p>
+  </footer>
+</body>
+
 </html>

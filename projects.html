@@ -1,100 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset = "UTF-8"/>
-    <meta name = "viewport"
-    content="width=device-width, initial-scale=1.0"/>
-    <title>
-    </title>
-    <link rel="stylesheet" href="style.css"/>
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Jason Rossi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-<body style = "background-color: #FCEDDA;">
-    <nav class="navbar">
-        <div class="navbar__container">
-          <a href="index.html" id="navbar__logo">Jason</a>
-          <div class="navbar__toggle" id="mobile-menu">
-            <span class="bar"></span> 
-            <span class="bar"></span>
-            <span class="bar"></span>
-          </div>
-            <div class="navbar__menu">
-                <a href="index.html" class="navbar__links" id = "home-page">Home</a>
-                <a href="projects.html" class="navbar__links" id = "projects-page">Projects</a>
-            </div>
-        </div>
-    </nav>
-    <div style = "background-color: #FCEDDA;" class = "personal-container" id = "projects">
-      
-      <br>
-        <div class="colWhole" id = "education" style = "width: 100%; height: 100%">
-          <h1 style = "text-align: center;">Projects! Click to View and Try Out!</h1>
-            <br><br>
-            <div style="text-align: center"> 
-              <a style = "text-decoration: none; font-size: 50px; color: black;" href="https://jrossi3.github.io/Spring-Break-Calculator/" target="_blank">
-                Spring Break Calculator
-              </a>
-              <br>
-                <button onclick="displaySpringBreak()" id = "springBreak" class = "SpringBreakButton">Display Project</button>
-                <button onclick="playPause()" id = "playPause" class = "SpringBreakButton" hidden>Play/Pause</button>
-              <br><br>
-              <video id = "videoSpring" width="50%" height = "50%" hidden>
-                <source src="SpringBreakCalculator.mp4" type="video/mp4">
-              </video>
-            </div> 
-            
-            <div style="text-align: center"> 
-              <a style = "text-decoration: none; font-size: 50px; color: black;" href="https://jrossi3.github.io/quiz-app/" target="_blank">
-                Quiz App
-              </a>
-              <br>
-              <button onclick="displayQuizApp()" id = "quizApp" class = "QuizAppButton">Display Project</button>
-              <button onclick="playPauseQuiz()" id = "playPauseQuiz" class = "QuizAppButton" hidden>Play/Pause</button> 
-              <br><br>
-              <video id = "videoQuiz" width="50%" height = "50%" hidden>
-                <source src="QuizApp.mov">
-              </video>
-            </div> 
-            <br>
-            <div style="text-align: center"> 
-              <a style = "text-decoration: none; font-size: 50px; color: black;" href="https://jrossi3.github.io/interactive-timer/" target="_blank">
-                Interactive Timer
-              </a>
-              <br>
-              <button onclick="displayTimer()" id = "timerButton" class = "TimerButton">Display Project</button>
-              <button onclick="playPauseTimer()" id = "playPauseTimer" class = "TimerButton" hidden>Play/Pause</button> 
-              <br><br>
-              <video id = "videoTimer" width="50%" height = "50%" hidden>
-                <source src="Timer.mov">
-              </video>
-            </div> 
-            <br>
-          <h1 style = "text-align: center;">This is my personal portfolio including classwork --> <a style = "color: black; text-decoration: none;" href = "https://github.com/Jrossi3" target="_blank">github.com/jrossi3</a></h1>
-        </div>
-        
-        <script src = "videosOfProjects.js"></script> 
 
-    <script src = "script.js"></script>
-    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
-     <!-- Latest compiled and minified CSS -->
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+<body>
+  <header class="hero">
+    <h1>My Projects!</h1>
+    <p>Click to view and try out my interactive applications and web projects I have built!</p>
+  </header>
 
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <nav class="main-nav">
+    <a href="index.html">About</a>
+    <a href="#projects">Projects</a>
+    <a href="https://github.com/jrossi3" target="_blank">GitHub</a>
+  </nav>
 
-    <!-- Popper JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <main class="section" id="projects">
+    <div class="container">
 
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <div class="project-card">
+        <a href="https://jrossi3.github.io/Spring-Break-Calculator/" target="_blank">Spring Break Calculator</a>
+        <p>A web app counting down to your next spring break using JavaScript.</p>
+        <button onclick="displaySpringBreak()" id = "springBreak" class = "SpringBreakButton">Display Project</button>
+        <button onclick="playPause()" id = "playPause" class = "SpringBreakButton" hidden>Play/Pause</button>
+        <br><br>
+        <video id = "videoSpring" width="70%" height = "70%" hidden>
+          <source src="SpringBreakCalculator.mp4" type="video/mp4">
+        </video>
+      </div>
 
-    <script src="https://kit.fontawesome.com/24d374bfa6.js" crossorigin="anonymous"></script>
-    <!-- Add icon library -->
-    <script src = "animation.js" defer></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" /> -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" crossorigin="anonymous"></script>
+      <div class="project-card">
+        <a href="https://jrossi3.github.io/quiz-app/" target="_blank">Quiz App</a>
+        <p>A fully interactive quiz platform with dynamic question rendering and scoring.</p>
+        <button onclick="displayQuizApp()" id = "quizApp" class = "QuizAppButton">Display Project</button>
+        <button onclick="playPauseQuiz()" id = "playPauseQuiz" class = "QuizAppButton" hidden>Play/Pause</button> 
+        <br><br>
+        <video id = "videoQuiz" width="70%" height = "70%" hidden>
+          <source src="QuizApp.mov">
+        </video>
+      </div>
+
+      <div class="project-card">
+        <a href="https://jrossi3.github.io/interactive-timer/" target="_blank">Interactive Timer</a>
+        <p>An adjustable and accessible timer app with visual feedback and clean UX.</p>
+        <button onclick="displayTimer()" id = "timerButton" class = "TimerButton">Display Project</button>
+        <button onclick="playPauseTimer()" id = "playPauseTimer" class = "TimerButton" hidden>Play/Pause</button> 
+        <br><br>
+        <video id = "videoTimer" width="70%" height = "70%" hidden>
+          <source src="Timer.mov">
+        </video>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2021 Jason Rossi | <a href="mailto:Jasrossi14@gmail.com">Jasrossi14@gmail.com</a></p>
+  </footer>
+
+  <script src = "videosOfProjects.js"></script> 
+
+  <script src = "script.js"></script>
 </body>
+
 </html>
