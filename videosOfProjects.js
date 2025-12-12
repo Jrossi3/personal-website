@@ -8,6 +8,9 @@ let quizButton = document.getElementById('quizApp')
 let timer = document.getElementById('videoTimer')
 let timerButton = document.getElementById('timerButton')
 let playPauseButtonTimer = document.getElementById('playPauseTimer')
+let sleeper = document.getElementById("videoSleeper");
+let buttonSleeper = document.getElementById('sleeper');
+let sleeperPause = document.getElementById('sleeperPause');
 function playPause() { 
     if (spring.paused) {
         spring.play(); 
@@ -34,6 +37,15 @@ function playPauseTimer() {
         timer.pause(); 
     }
 } 
+
+function playPauseSleeper() { 
+    if (sleeper.paused) {
+        sleeper.play(); 
+    }
+    else {
+        sleeper.pause(); 
+    }
+}
 // function makeBig() { 
 //     myVideo.width = 1000; 
 // } 
@@ -43,6 +55,19 @@ function playPauseTimer() {
 // function makeNormal() { 
 //     myVideo.width = 420; 
 // }
+
+function displaySleeper() {
+    if (sleeper.hidden == false){
+        sleeper.hidden = true
+        sleeperPause.hidden = true
+        buttonSleeper.innerHTML = 'Display Project'
+    } else {
+        sleeper.hidden = false
+        sleeperPause.hidden = false
+        buttonSleeper.innerHTML = 'Hide Project'
+    }
+}
+
 function displayQuizApp() {
     if (quiz.hidden == false){
         quiz.hidden = true
